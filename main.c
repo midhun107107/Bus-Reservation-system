@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include"user.h"
 //Login System: Users can access the system by entering their username and password
 //Ticket Purchase: Logged-in individuals may reserve tickets for available buses by entering the bus number, their name, and age.
 //The program allocates a seat number and decreases the number of available seats on the selected bus.
@@ -10,18 +10,43 @@
 
 void compare_usrname_password(char *,char *);
 void create_account();
-void create_username_password(char *,char *);
+void create_username_password();
 void login(char *,char *);
 void bus_layout(int ,int);
+void select_seat(int);
 void main()
 {
 
+    while(1)
+    {
+
+        add_new_user();
+        printf("debug\n");
+    }
 printf("Test\n\n");
+create_username_password();
 bus_layout(0,0);
 
 }
+void select_seat(int seat)
+{
 
 
+
+}
+void create_username_password()
+{
+    char name[100];
+    char pwd[50];
+    printf("Enter the user name : ");
+    scanf("%s",&name);
+//    strcpy(new_user_login.user_name,name);
+
+    printf("Enter the new password : ");
+    scanf("%s",&pwd);
+//    strcpy(new_user_login.user_password,pwd);
+
+}
 
 void login(char *username ,char *password )
 {

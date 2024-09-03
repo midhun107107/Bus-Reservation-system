@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1725384864 source:d:\midhun\c\emb_silicon\bus reservation system\main.c
+	<stdio.h>
+	"user.h"
+
+1725386168 d:\midhun\c\emb_silicon\bus reservation system\user.h
+
+1725386449 source:d:\midhun\c\emb_silicon\bus reservation system\user.c
+	"user.h"
+	<stdio.h>
+
