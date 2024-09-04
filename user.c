@@ -61,3 +61,18 @@ int char_cmp(char *a,char *b)
      res = strcmp(a,b);
      return res;
  }
+
+
+ void create_username_password()
+{
+    char name[100];
+    char pwd[50];
+    printf("Enter the user name : ");
+    scanf("%s",&name);
+//    strcpy(new_user_login.user_name,name);
+
+    printf("Enter the new password : ");
+    scanf("%s",&pwd);
+//    strcpy(new_user_login.user_password,pwd);
+
+}

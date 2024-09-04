@@ -31,6 +31,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Book_seat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Book_seat.h" />
+		<Unit filename="bus_layout.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bus_layout.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
