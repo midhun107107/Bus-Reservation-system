@@ -12,7 +12,11 @@ void main()
 {
     char user_input;
 
-
+    while(1)
+    {
+        select_source_destination();
+        while(1);
+    }
 
     while(1)
     {

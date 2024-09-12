@@ -2,6 +2,7 @@
 #include"user.h"
 #include"Book_seat.h"
 #include"bus_layout.h"
+#include "place.h"
 
 char user_input_data();
 void compare_usrname_password(char *,char *);

@@ -42,6 +42,11 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="main.h" />
+		<Unit filename="place.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="place.h" />
 		<Unit filename="user.c">
 			<Option compilerVar="CC" />
 		</Unit>
