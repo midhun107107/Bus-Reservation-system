@@ -1,27 +1,30 @@
 
-#define KARANTAKA   0
-#define KERALA      1
-#define ANDRA       2
-#define TAMILNADU   3
-#define GOA         4
+#include<stdio.h>
 
 
-struct local{
+struct local
+{
 
     char data[100];
 };
 
-typedef struct
+struct state
 {
     char data[100];
 
 
-}state;
+};
 
-
+struct source_dest
+{
+    char source[50];
+    char destination[50];
+    int T_hour;
+    int T_min;
+};
 
 void select_source_destination();
-
+//void print_struct(struct local,int size);
 
 
 
