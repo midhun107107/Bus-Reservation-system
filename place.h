@@ -23,6 +23,13 @@ struct source_dest
     int T_min;
 };
 
+struct bus_time_24
+{
+    int Hour;
+    int Min;
+};
+
+
 void select_source_destination();
 //void print_struct(struct local,int size);
 

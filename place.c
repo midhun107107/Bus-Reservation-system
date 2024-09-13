@@ -67,7 +67,35 @@ void select_source_destination()
 
     strcpy(_source_dest.destination,states[input].data);
 
+    printf("Select the Time : \n");
+    printf("1 - 7:00\n2 - 8:00\n3 - 18:00\n4 - 19:00\n5 - 20:00\n6 - 21:00\n7 _ 22:00\n8 - 23:00\n");
+    scanf("%d",&input);
+    switch(input)
+    {
+        case 1 : _source_dest.T_hour = 7;
+        break;
+        case 2 : _source_dest.T_hour = 8;
+        break;
+        case 3 : _source_dest.T_hour = 18;
+        break;
+        case 4 : _source_dest.T_hour = 19;
+        break;
+        case 5 : _source_dest.T_hour = 20;
+        break;
+        case 6 : _source_dest.T_hour = 21;
+        break;
+        case 7 : _source_dest.T_hour = 22;
+        break;
+        case 8 : _source_dest.T_hour = 23;
+        break;
+        default : printf("Not available !!\nSelect any above timing \n"); printf("DEBUG _TODO -need to implement it in while loop ,if it come to default it should again ask user to enter timeing..\n");
+        break;
+    }
+
+
     print_source_destination(_source_dest);
+
+
 
 
 
@@ -79,7 +107,7 @@ void print_source_destination(struct source_dest s)
     printf("Source      : %s\n",s.source);
     printf("Destination : %s\n",s.destination);
     printf("Hour        : %d\n",s.T_hour);
-    printf("MIn         : %d\n",s.T_min);
+    printf("MIn         : 00\n",s.T_min);
 
 }
 
