@@ -1,6 +1,8 @@
+#ifndef PLACE_H
+#define PLACE_H
 
 #include<stdio.h>
-
+#include"user.h"
 
 struct local
 {
@@ -29,9 +31,13 @@ struct bus_time_24
     int Min;
 };
 
-
 void select_source_destination();
 //void print_struct(struct local,int size);
+
+
+
+#endif // PLACE_H
+
 
 
 

@@ -1,3 +1,5 @@
+#ifndef STRUCT_H
+#define STRUCT_H
 
 
 typedef struct new_user
@@ -15,3 +17,11 @@ extern int user_count;
 void add_new_user();
 char compare_user_if_exist(char *,char *);
 int char_cmp(char *,char *);
+
+
+#endif // STRUCT_H
+
+
+
+
+

@@ -1,6 +1,7 @@
 #include "place.h"
 
 
+
 char buff[30] = "midhun";
 struct source_dest _source_dest;
 
@@ -53,6 +54,7 @@ void print_strct(struct local d[],int size)
 void select_source_destination()
 {
     int input;
+    printf("TOOD : source and dest should not be same \n");
     printf("Select the Source from the list : \n\n");
     print_strct(states,sizeof(states)/sizeof(states[0].data));
     scanf("%d",&input);
@@ -92,7 +94,7 @@ void select_source_destination()
         break;
     }
 
-
+    printf("User : %s\n",user_details[user_count-1].user_name); // user_counter is incremented after adding a new user , so decrementing from here
     print_source_destination(_source_dest);
 
 

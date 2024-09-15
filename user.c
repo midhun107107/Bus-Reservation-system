@@ -45,12 +45,12 @@ char compare_user_if_exist(char *b1,char *b2)
            {
                 if(char_cmp(b2,user_details[i].user_password) == 0)
                 {
-                    return 'F';
+                    return 'F';//user exist
                 }
            }
 
     }
-    return 'T';
+    return 'T';//not exist add to struct
 }
 
 
