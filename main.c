@@ -12,7 +12,12 @@ void main()
 {
     char user_input;
 
-
+    while(1)
+    {
+        //create_new_file();
+        write_file_data('s',write_char);
+        while(1);
+    }
     while(1)
     {
         user_input = user_input_data();
@@ -51,7 +56,7 @@ char user_input_data()
     {
         printf("Enter the option \n");
         printf("1 - New user\n2 - Login\n");
-        scanf("%c",&a);
+        scanf(" %c",&a);
     }
     else
     {
