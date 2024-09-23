@@ -2,7 +2,7 @@
 #define BUS_LAYOUT_H
 
 
-void bus_layout(int,int);
+void bus_layout(int []);
 
 
 

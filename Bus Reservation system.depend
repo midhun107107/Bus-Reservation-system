@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1726941557 source:d:\midhun\c\emb_silicon\bus reservation system\main.c
+1727110864 source:d:\midhun\c\emb_silicon\bus reservation system\main.c
 	"main.h"
 
 1726335247 d:\midhun\c\emb_silicon\bus reservation system\user.h
@@ -8,17 +8,17 @@
 	"user.h"
 	<stdio.h>
 
-1725621135 source:d:\midhun\c\emb_silicon\bus reservation system\book_seat.c
+1727114351 source:d:\midhun\c\emb_silicon\bus reservation system\book_seat.c
 	"Book_seat.h"
 
-1726336334 d:\midhun\c\emb_silicon\bus reservation system\book_seat.h
+1727114649 d:\midhun\c\emb_silicon\bus reservation system\book_seat.h
 
-1725450790 source:d:\midhun\c\emb_silicon\bus reservation system\bus_layout.c
+1727114632 source:d:\midhun\c\emb_silicon\bus reservation system\bus_layout.c
 	"bus_layout.h"
 
-1726336378 d:\midhun\c\emb_silicon\bus reservation system\bus_layout.h
+1727114668 d:\midhun\c\emb_silicon\bus reservation system\bus_layout.h
 
-1726940509 d:\midhun\c\emb_silicon\bus reservation system\main.h
+1727114679 d:\midhun\c\emb_silicon\bus reservation system\main.h
 	<stdio.h>
 	"user.h"
 	"Book_seat.h"
@@ -40,10 +40,11 @@
 1726423734 d:\midhun\c\emb_silicon\bus reservation system\login.h
 	"user.h"
 
-1726940974 source:d:\midhun\c\emb_silicon\bus reservation system\file.c
+1727027010 source:d:\midhun\c\emb_silicon\bus reservation system\file.c
 	"file.h"
 
-1726941621 d:\midhun\c\emb_silicon\bus reservation system\file.h
+1727026973 d:\midhun\c\emb_silicon\bus reservation system\file.h
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 

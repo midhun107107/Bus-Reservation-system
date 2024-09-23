@@ -7,15 +7,18 @@
 //Checking Bus Status: Users may check the status of the bus they are currently scheduled to ride on.
 //The program displays information such as the bus number, origin and destination, total number of seats, available seats, and fare.
 
-
+char st[10] = "Midhun";
 void main()
 {
     char user_input;
-
+    file_details.id = '2';
+    strcpy(file_details.username,"Midhun");
+    strcpy(file_details.password,"Nmith@123");
     while(1)
     {
-        //create_new_file();
-        write_file_data('s',write_char);
+
+        book(1);
+        //copy_file(file_details);
         while(1);
     }
     while(1)
@@ -35,7 +38,7 @@ void main()
                       break;
             case '4': if(user_loggedin_flag == 1)
                       {
-                            bus_layout(0,0);
+                            bus_layout(0);
                       }
                       break;
             case '5': user_loggedin_flag = 0;

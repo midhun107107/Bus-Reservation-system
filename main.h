@@ -14,7 +14,7 @@ void compare_usrname_password(char *,char *);
 void create_account();
 void create_username_password();
 void login(char *,char *);
-void bus_layout(int ,int);
+void bus_layout(int []);
 void select_seat(int);
 
 

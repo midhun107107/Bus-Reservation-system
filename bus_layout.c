@@ -4,7 +4,7 @@
 
 
 
-void bus_layout(int a,int b)
+void bus_layout(int a[])
 {
 
  int i,j,count =0;
