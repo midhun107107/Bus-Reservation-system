@@ -1,8 +1,8 @@
 #include "Book_seat.h"
-
+int seats[100];
 void book(int seat_num )
 {
-   int seats[100],i;
+   int i;
 
    int num_of_seats;
 
@@ -20,7 +20,7 @@ void book(int seat_num )
    printf("\n\n");
     for(i=0;i<num_of_seats;i++)
    {
-        printf("%d",seats[i]);
+        printf("%d\n",seats[i]);
    }
    printf("\n\n");
    bus_layout(seats);

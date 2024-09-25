@@ -2,7 +2,7 @@
 #define BOOK_SEAT_H
 
 void book(int );
-
+extern int seats[100];
 
 
 
