@@ -94,10 +94,12 @@ void select_source_destination()
         break;
     }
 
+    book(0);
     printf("User : %s\n",user_details[user_count-1].user_name); // user_counter is incremented after adding a new user , so decrementing from here
     print_source_destination(_source_dest);
-
-
+    printf("  BOOKED SEATS  \n");
+    bus_layout(seats);
+    printf("\n\n");
 
 
 

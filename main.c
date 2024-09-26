@@ -11,15 +11,16 @@ char st[10] = "Midhun";
 void main()
 {
     char user_input;
-    file_details.id = '2';
+    /*file_details.id = '2';
     strcpy(file_details.username,"Midhun");
     strcpy(file_details.password,"Nmith@123");
-    while(1)
+    */
+    //while(1)
     {
 
-        book(1);
+    //    book(1);
         //copy_file(file_details);
-        while(1);
+    //    while(1);
     }
     while(1)
     {

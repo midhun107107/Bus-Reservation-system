@@ -8,6 +8,7 @@ typedef struct new_user
     char user_password[50];
     int user_id[100];
 
+
 }user;
 
 user user_details[100];

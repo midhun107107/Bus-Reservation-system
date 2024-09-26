@@ -7,7 +7,7 @@ void book(int seat_num )
    int num_of_seats;
 
    printf("\n\n   Available Seats\n\n");
-
+   bus_layout(seats);
    printf("Enter the number of seats want to book : \n");
    scanf("%d",&num_of_seats);
 
@@ -23,10 +23,6 @@ void book(int seat_num )
         printf("%d\n",seats[i]);
    }
    printf("\n\n");
-   bus_layout(seats);
-
-
-
 
 }
 
