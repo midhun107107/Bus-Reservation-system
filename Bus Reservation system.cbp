@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Book_seat.h" />
+		<Unit filename="Bus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bus.h" />
 		<Unit filename="bus_layout.c">
 			<Option compilerVar="CC" />
 		</Unit>

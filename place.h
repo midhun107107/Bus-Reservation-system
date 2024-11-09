@@ -23,8 +23,11 @@ struct source_dest
     char destination[50];
     int T_hour;
     int T_min;
+    char bus_name[20];
+    char bus_num[10];
 };
 
+extern struct source_dest;
 struct bus_time_24
 {
     int Hour;

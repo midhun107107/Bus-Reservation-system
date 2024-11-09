@@ -1,12 +1,13 @@
 # depslib dependency file v1.0
-1727348704 source:d:\midhun\c\emb_silicon\bus reservation system\main.c
+1731177964 source:d:\midhun\c\emb_silicon\bus reservation system\main.c
 	"main.h"
 
-1727349969 d:\midhun\c\emb_silicon\bus reservation system\user.h
+1731179265 d:\midhun\c\emb_silicon\bus reservation system\user.h
 
-1726331412 source:d:\midhun\c\emb_silicon\bus reservation system\user.c
+1731178748 source:d:\midhun\c\emb_silicon\bus reservation system\user.c
 	"user.h"
 	<stdio.h>
+	"place.h"
 
 1727361090 source:d:\midhun\c\emb_silicon\bus reservation system\book_seat.c
 	"Book_seat.h"
@@ -19,7 +20,7 @@
 1727282055 d:\midhun\c\emb_silicon\bus reservation system\bus_layout.h
 	"Book_seat.h"
 
-1727114679 d:\midhun\c\emb_silicon\bus reservation system\main.h
+1731175855 d:\midhun\c\emb_silicon\bus reservation system\main.h
 	<stdio.h>
 	"user.h"
 	"Book_seat.h"
@@ -27,19 +28,21 @@
 	"place.h"
 	"login.h"
 	"file.h"
+	"bus.h"
 
-1727361320 source:d:\midhun\c\emb_silicon\bus reservation system\place.c
+1731179148 source:d:\midhun\c\emb_silicon\bus reservation system\place.c
 	"place.h"
+	"user.h"
 
-1727349227 d:\midhun\c\emb_silicon\bus reservation system\place.h
+1731174759 d:\midhun\c\emb_silicon\bus reservation system\place.h
 	<stdio.h>
 	"user.h"
 	"Book_seat.h"
 
-1726425915 source:d:\midhun\c\emb_silicon\bus reservation system\login.c
+1731178534 source:d:\midhun\c\emb_silicon\bus reservation system\login.c
 	"login.h"
 
-1726423734 d:\midhun\c\emb_silicon\bus reservation system\login.h
+1731178534 d:\midhun\c\emb_silicon\bus reservation system\login.h
 	"user.h"
 
 1727027010 source:d:\midhun\c\emb_silicon\bus reservation system\file.c
@@ -49,4 +52,10 @@
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+
+1731179132 d:\midhun\c\emb_silicon\bus reservation system\bus.h
+	<string.h>
+
+1731173163 source:d:\midhun\c\emb_silicon\bus reservation system\bus.c
+	"bus.h"
 

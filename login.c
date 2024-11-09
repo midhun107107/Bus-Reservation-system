@@ -26,7 +26,8 @@ void user_login()
     }
     else
     {
-        printf("User Login Failed!!!\nEnter correct username or password!!!\nor Sign Up!!!\n");
+        printf("User Login Failed!!!\nEnter correct username or password!!!\nor Sign Up!!!\n\n");
+        printf("................................................................................\n\n");
     }
 
 }
@@ -40,6 +41,7 @@ char login_compare_user_if_exist(char *b1,char *b2)
                 if(char_cmp(b2,user_details[i].user_password) == 0)
                 {
                     return 'F';//user exist
+
                 }
            }
 

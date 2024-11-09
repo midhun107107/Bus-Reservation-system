@@ -1,5 +1,5 @@
 #include "place.h"
-
+#include"user.h"
 
 
 char buff[30] = "midhun";
@@ -94,6 +94,39 @@ void select_source_destination()
         break;
     }
 
+    printf("Select the Bus :\n");
+    printf("1 - SRS Travels\n2 - Kallada Travels\n3 - KKN Travels\n4 - GreenLine Travels And Holidays\n5 - Kerala Lines\n6 - Royal Travels\n7 _ Suraj Holidays\n8 - Krs travels\n");
+    scanf("%d",&input);
+    switch(input)
+    {
+        case 1 :strcpy(_source_dest.bus_name,"SRS Travels" );
+                strcpy(_source_dest.bus_num,"KA51 AA 9931" );
+                break;
+        case 2 :strcpy(_source_dest.bus_name,"Kallada Travels");
+                strcpy(_source_dest.bus_num,"KA51 AA 4577" );
+                break;
+        case 3 :strcpy(_source_dest.bus_name,"KKN Travels" );
+                strcpy(_source_dest.bus_num,"KA51 AA 2567" );
+                break;
+        case 4 :strcpy(_source_dest.bus_name,"GreenLine Travels And Holidays" );
+                strcpy(_source_dest.bus_num,"KA51 AA 2254" );
+                break;
+        case 5 :strcpy(_source_dest.bus_name,"Kerala Lines" );
+                strcpy(_source_dest.bus_num,"KA51 AA 5567" );
+                break;
+        case 6 :strcpy(_source_dest.bus_name,"Royal Travels" );
+                strcpy(_source_dest.bus_num,"KA51 AA 8896" );
+                break;
+        case 7 :strcpy(_source_dest.bus_name,"Suraj Holidays");
+                strcpy(_source_dest.bus_num,"KA51 AA 2587" );
+                break;
+        case 8 :strcpy(_source_dest.bus_name,"Krs travels" );
+                strcpy(_source_dest.bus_num,"KA51 AA 4158" );
+                break;
+        default : printf("Not available !!\nSelect any above timing \n"); printf("DEBUG _TODO -need to implement it in while loop ,if it come to default it should again ask user to enter timeing..\n");
+                break;
+
+    }
     book(0);
     printf("User : %s\n",user_details[user_count-1].user_name); // user_counter is incremented after adding a new user , so decrementing from here
     print_source_destination(_source_dest);
@@ -101,6 +134,7 @@ void select_source_destination()
     bus_layout(seats);
     printf("\n\n");
 
+    save_data(_source_dest,(user_count-1));
 
 
 }
@@ -112,6 +146,8 @@ void print_source_destination(struct source_dest s)
     printf("Destination : %s\n",s.destination);
     printf("Hour        : %d\n",s.T_hour);
     printf("MIn         : 00\n",s.T_min);
+    printf("Bus Name    : %s\n",s.bus_name);
+    printf("Bus Num     : %s\n",s.bus_num);
 
 }
 

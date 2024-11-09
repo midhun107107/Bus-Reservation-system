@@ -1,8 +1,8 @@
 #include"user.h"
 #include<stdio.h>
-
+#include "place.h"
 int user_count = 0;
-
+int temp_user_count;
 
 
 void add_new_user()
@@ -45,7 +45,9 @@ char compare_user_if_exist(char *b1,char *b2)
            {
                 if(char_cmp(b2,user_details[i].user_password) == 0)
                 {
+                    temp_user_count = i;
                     return 'F';//user exist
+
                 }
            }
 
@@ -76,3 +78,15 @@ int char_cmp(char *a,char *b)
 //    strcpy(new_user_login.user_password,pwd);
 
 }
+void save_data(struct source_dest s,int user_num )
+{
+    strcpy(user_details[user_num].bus_name,s.bus_name);
+    strcpy(user_details[user_num].bus_num,s.bus_num);
+    strcpy(user_details[user_num].source,s.source);
+    strcpy(user_details[user_num].destination,s.destination);
+    user_details[user_num].T_hour = s.T_hour;
+    user_details[user_num].T_min =s.T_min;
+
+}
+
+

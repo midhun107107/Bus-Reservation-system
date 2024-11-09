@@ -8,6 +8,8 @@
 #include"place.h"
 #include"login.h"
 #include"file.h"
+#include "bus.h"
+
 
 char user_input_data();
 void compare_usrname_password(char *,char *);
@@ -16,7 +18,7 @@ void create_username_password();
 void login(char *,char *);
 void bus_layout(int []);
 void select_seat(int);
-
-
+void file_check();
+void print_user_details(int);
 
 #endif // MAIN_H
