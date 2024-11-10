@@ -87,6 +87,15 @@ void save_data(struct source_dest s,int user_num )
     user_details[user_num].T_hour = s.T_hour;
     user_details[user_num].T_min =s.T_min;
 
+    add_seats_details_to_user_details(s,user_num); // saving seat details
 }
 
+void add_seats_details_to_user_details(struct source_dest s,int user_num )
+{
+
+    for(int i=0;i<50;i++)
+    {
+        user_details[user_num].seats[i] = s.seats[i];
+    }
+}
 

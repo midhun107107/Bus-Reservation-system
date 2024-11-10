@@ -39,7 +39,14 @@ void main()
 
                             print_user_details(temp_user_count);
                       }
+                      break;
+            case '7': if(user_loggedin_flag == 1)//Show My details
+                      {
+                               detele_booking(temp_user_count);
+                               print_user_details(temp_user_count);
 
+                      }
+                      break;
         }
     }
 
@@ -59,7 +66,7 @@ char user_input_data()
     else
     {
         printf("Enter the option \n");
-        printf("3 - Book My Bus\n4 - Show Bus Layout\n5 - logout\n6 - Show My details\n");
+        printf("3 - Book My Bus\n4 - Show Bus Layout\n5 - logout\n6 - Show My details\n7 - Cancel Booking\n");
         scanf(" %c",&a);
     }
     return a;
@@ -85,7 +92,18 @@ void print_user_details(int count)
     printf("Bus hour        :%d ",user_details[count].T_hour);
     printf("Bus Min         :%d\n",user_details[count].T_min);
     printf("\n\n");
+    update_currectuser_seats(count);
+    bus_layout(0);
 
 }
+void update_currectuser_seats(int count) // udating the global variable "seats[]"
+{
+    for(int i=0;i<50;i++)
+    {
+        seats[i] = user_details[count].seats[i];
+    }
+
+}
+
 
 

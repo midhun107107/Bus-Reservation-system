@@ -24,7 +24,8 @@ struct source_dest
     int T_hour;
     int T_min;
     char bus_name[20];
-    char bus_num[10];
+    char bus_num[20];
+    int seats[50];
 };
 
 extern struct source_dest;
@@ -33,7 +34,7 @@ struct bus_time_24
     int Hour;
     int Min;
 };
-
+void add_seats_details();
 void select_source_destination();
 //void print_struct(struct local,int size);
 

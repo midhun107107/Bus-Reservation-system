@@ -1,5 +1,7 @@
 #include "Book_seat.h"
+
 int seats[100];
+struct source_dest data;
 void book(int seat_num )
 {
    int i;
@@ -26,5 +28,21 @@ void book(int seat_num )
 
 }
 
+void detele_booking(int user)
+{
 
+    strcpy(data.bus_name," ");
+    strcpy(data.bus_num," ");
+    strcpy(data.source," ");
+    strcpy(data.destination," ");
+    data.T_hour = 0;
+    data.T_min = 0;
+
+    for(int i=0;i<50;i++)
+    {
+        data.seats[i] = 0;
+    }
+     save_data(data,user );
+     printf("\nBooking canceled\n");
+}
 

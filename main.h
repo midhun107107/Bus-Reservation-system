@@ -20,5 +20,5 @@ void bus_layout(int []);
 void select_seat(int);
 void file_check();
 void print_user_details(int);
-
+void update_currectuser_seats(int count);
 #endif // MAIN_H

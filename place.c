@@ -134,6 +134,7 @@ void select_source_destination()
     bus_layout(seats);
     printf("\n\n");
 
+    add_seats_details();//adding seat details to _source_dest to save individual seat details
     save_data(_source_dest,(user_count-1));
 
 
@@ -151,4 +152,11 @@ void print_source_destination(struct source_dest s)
 
 }
 
+void add_seats_details()
+{
+    for(int i=0;i<50;i++)
+    {
+        _source_dest.seats[i] = seats[i];
+    }
+}
 
